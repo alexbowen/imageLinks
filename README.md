@@ -6,7 +6,7 @@ See the [component demo page]() for more information.
 usage
 -----
 
-```<image-links axis="horizontal|vertical|column" data="path/to/data.json" width="xx"></image-links>
+```<image-links axis="horizontal|vertical|column" data="path/to/data.json" width="xx"></image-links>```
 
 ## Getting Started with Polymer
 
