@@ -1,8 +1,13 @@
 image-links
 ================
 
-See the [component page](http://alexbowen.github.io/social) for more information.
+See the [component demo page]() for more information.
 
-## Getting Started
+usage
+-----
 
-We've put together a [guide for social](http://www.polymer-project.org/docs/start/reusableelements.html) to help get you rolling.
+```<image-links axis="horizontal|vertical|column" data="path/to/data.json" width="xx"></image-links>
+
+## Getting Started with Polymer
+
+We've put together a [guide](http://www.polymer-project.org/docs/start/reusableelements.html) to help get you rolling.
