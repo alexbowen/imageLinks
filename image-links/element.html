@@ -1,5 +1,5 @@
-<link rel="import" href="./polymer/polymer.html">
-<link rel="import" href="./core-ajax/core-ajax.html">
+<link rel="import" href="../polymer/polymer.html">
+<link rel="import" href="../core-ajax/core-ajax.html">
 
 <!--
 Element providing a list of image based links with optional description.
@@ -16,11 +16,11 @@ Element providing a list of image based links with optional description.
 
     <template>
 
-        <link rel="stylesheet" href="links.css"/>
+        <link rel="stylesheet" href="./element.css"/>
 
         <core-ajax id="ajax"
                    auto
-                   url="../data/{{data}}.json"
+                   url="./image-links/data/{{data}}.json"
                    on-core-response="{{linksLoaded}}"
                    handleAs="json">
         </core-ajax>
