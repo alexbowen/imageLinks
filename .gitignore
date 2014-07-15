@@ -1,0 +1,8 @@
+node_modules
+dist
+.sass-cache
+.tmp
+.DS_Store
+polymer
+platform
+core-component-page
