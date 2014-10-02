@@ -3,27 +3,32 @@
         {
             "name" : "github",
             "title" : "Github",
-            "url" : "https://github.com/alexbowen"
+            "url" : "https://github.com/alexbowen",
+            "description" : "Superheroic JavaScript MVW Framework from the chaps at Google."
         },
         {
             "name" : "linked",
             "title" : "Linked in",
-            "url" : "https://www.linkedin.com/profile/view?id=96726452"
+            "url" : "https://www.linkedin.com/profile/view?id=96726452",
+            "description" : "Superheroic JavaScript MVW Framework from the chaps at Google."
         },
         {
             "name" : "stack",
             "title" : "Stack Overflow",
-            "url" : "http://stackoverflow.com/users/1567176/alfonsob"
+            "url" : "http://stackoverflow.com/users/1567176/alfonsob",
+            "description" : "Superheroic JavaScript MVW Framework from the chaps at Google."
         },
         {
             "name" : "gplus",
             "title" : "Google+",
-            "url" : "https://plus.google.com/+AlexBowen123/about"
+            "url" : "https://plus.google.com/+AlexBowen123/about",
+            "description" : "Superheroic JavaScript MVW Framework from the chaps at Google."
         },
         {
             "name" : "twitter",
             "title" : "Twitter",
-            "url" : "https://twitter.com/alfonsob8"
+            "url" : "https://twitter.com/alfonsob8",
+            "description" : "Superheroic JavaScript MVW Framework from the chaps at Google."
         }
     ]
 }

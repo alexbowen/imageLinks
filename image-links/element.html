@@ -1,5 +1,5 @@
-<link rel="import" href="../polymer/polymer.html">
-<link rel="import" href="../core-ajax/core-ajax.html">
+<link rel="import" href="../bower_components/polymer/polymer.html">
+<link rel="import" href="../bower_components/core-ajax/core-ajax.html">
 
 <!--
 Element providing a list of image based links with optional description.
@@ -35,7 +35,7 @@ Element providing a list of image based links with optional description.
                     <a class="{{link.name}}" alt="{{link.name}}" href="{{link.url}}"></a>
                     <div>
                         <h4 class="{{ {hidden : axis === 'horizontal'} | tokenList }}">{{link.title}}</h4>
-                        <p>{{link.description}}<a class="{{ {hidden : axis === 'horizontal'} | tokenList }}" href="{{link.url}}">read more</a></p>
+                        <p class="{{ {hidden : axis === 'horizontal'} | tokenList }}">{{link.description}}<a href="{{link.url}}">read more</a></p>
                     </div>
                 </li>
             </template>
