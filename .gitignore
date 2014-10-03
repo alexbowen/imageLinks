@@ -1,6 +1,8 @@
 node_modules
-dist
 .sass-cache
 .tmp
 .DS_Store
 bower_components
+*.iml
+vulcanized.*
+.idea
