@@ -1,10 +1,18 @@
 <link rel="import" href="../bower_components/polymer/polymer.html">
+<!--<link rel="import" href="../bower_components/core-ajax/core-ajax.html">-->
 
 <polymer-element name="image-links" attributes="axis dataUrl width">
 
     <template>
 
         <link rel="stylesheet" href="./element.css"/>
+
+        <!--<core-ajax id="ajax"-->
+                   <!--auto-->
+                   <!--url="{{dataUrl}}"-->
+                   <!--on-core-response="{{linksLoaded}}"-->
+                   <!--handleAs="json">-->
+        <!--</core-ajax>-->
 
         <h2><content></content> - {{axis}}</h2>
 
@@ -16,6 +24,13 @@
             ready : function () {
                 console.log(this.axis);
             }
+
+//            links: [],
+//
+//            linksLoaded: function () {
+//                this.links = this.$.ajax.response.data;
+//                console.log(this.links);
+//            }
         });
 
     </script>
