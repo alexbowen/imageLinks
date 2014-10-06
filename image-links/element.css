@@ -2,11 +2,6 @@
     display: block;
 }
 
-:host :hover {
-    transition: 0.25s ease-in;
-    transform: translate(20px, 0);
-}
-
 h2 {
     clear:left
 }
