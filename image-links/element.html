@@ -1,20 +1,32 @@
 <link rel="import" href="../bower_components/polymer/polymer.html">
-<!--<link rel="import" href="../bower_components/core-ajax/core-ajax.html">-->
+<link rel="import" href="../bower_components/core-ajax/core-ajax.html">
 
-<polymer-element name="image-links" attributes="axis dataUrl width">
+<polymer-element name="image-links" attributes="axis dataUrl">
 
     <template>
 
         <link rel="stylesheet" href="./element.css"/>
 
-        <!--<core-ajax id="ajax"-->
-                   <!--auto-->
-                   <!--url="{{dataUrl}}"-->
-                   <!--on-core-response="{{linksLoaded}}"-->
-                   <!--handleAs="json">-->
-        <!--</core-ajax>-->
+        <core-ajax id="ajax"
+                   auto
+                   url="{{dataUrl}}"
+                   on-core-response="{{linksLoaded}}"
+                   handleAs="json">
+        </core-ajax>
 
         <h2><content></content> - {{axis}}</h2>
+
+        <!--<ul class="{{axis}}">-->
+            <!--<template repeat="{{link in links}}">-->
+                <!--<li>-->
+                    <!--<a class="{{link.name}}" alt="{{link.name}}" href="{{link.url}}"></a>-->
+                    <!--<div>-->
+                        <!--<h4 class="{{ {hidden : axis === 'horizontal'} | tokenList }}">{{link.title}}</h4>-->
+                        <!--<p class="{{ {hidden : axis === 'horizontal'} | tokenList }}">{{link.description}}<a href="{{link.url}}">read more</a></p>-->
+                    <!--</div>-->
+                <!--</li>-->
+            <!--</template>-->
+        <!--</ul>-->
 
     </template>
 
@@ -23,14 +35,14 @@
         Polymer('image-links', {
             ready : function () {
                 console.log(this.axis);
-            }
+            },
 
-//            links: [],
-//
-//            linksLoaded: function () {
-//                this.links = this.$.ajax.response.data;
-//                console.log(this.links);
-//            }
+            links: [],
+
+            linksLoaded: function () {
+                this.links = this.$.ajax.response.data;
+                console.log(this.links);
+            }
         });
 
     </script>
