@@ -1,0 +1,25 @@
+<link rel="import" href="../bower_components/polymer/polymer.html">
+
+<polymer-element name="image-links" attributes="axis dataUrl width">
+
+    <template>
+
+        <link rel="stylesheet" href="./element.css"/>
+
+        <content>
+            <h2>{{axis}}</h2>
+        </content>
+
+    </template>
+
+    <script>
+
+        Polymer('image-links', {
+            ready : function () {
+                console.log(this.axis);
+            }
+        });
+
+    </script>
+
+</polymer-element>
