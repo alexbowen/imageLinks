@@ -1,11 +1,11 @@
 <link rel="import" href="../bower_components/polymer/polymer.html">
 <link rel="import" href="../bower_components/core-ajax/core-ajax.html">
 
-<polymer-element name="image-links" attributes="axis dataUrl">
+<polymer-element name="list-links">
 
     <template>
 
-        <link rel="stylesheet" href="./element.css"/>
+        <link rel="stylesheet" href="./links.css"/>
 
         <core-ajax id="ajax"
                    auto
@@ -16,31 +16,20 @@
 
         <h2><content></content> - {{axis}}</h2>
 
-        <ul class="{{axis}}">
-            <template repeat="{{link in links | sort}}">
-                <li>
-                    <a class="{{link.name}}" alt="{{link.name}}" href="{{link.url}}"></a>
-                    <div>
-                        <h4 class="{{ {hidden : axis === 'horizontal'} | tokenList }}">{{link.title}}</h4>
-                        <p class="{{ {hidden : axis === 'horizontal'} | tokenList }}">{{link.description}}<a href="{{link.url}}">read more</a></p>
-                    </div>
-                </li>
-            </template>
-        </ul>
-
     </template>
 
     <script>
 
-        Polymer('image-links', {
+        Polymer({
             ready : function () {
-                console.log(this.axis);
+                console.log('list-links (parent) ready');
             },
 
             links: [],
 
             linksLoaded: function () {
                 this.links = this.$.ajax.response.data;
+                console.log(this.links);
             },
 
             sort: function(items) {

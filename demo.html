@@ -5,7 +5,8 @@
     <title>image-links Demo</title>
 
     <script src="./bower_components/platform/platform.js"></script>
-    <link rel="import" href="./image-links/element.html">
+
+    <link rel="import" href="./image-links/image.html">
     <style>
         h2 { color : black }
     </style>
@@ -16,6 +17,14 @@
 <p>Our polymer web component</p>
 
 <image-links axis="horizontal" dataUrl="data/social.json">Image links</image-links>
+<image-links axis="horizontal" dataUrl="data/tech.json">Image links</image-links>
+
+<image-links axis="vertical" dataUrl="data/social.json">Image links</image-links>
+<image-links axis="vertical" dataUrl="data/tech.json">Image links</image-links>
+
+<image-links axis="column" dataUrl="data/social.json">Image links</image-links>
+<image-links axis="column" dataUrl="data/tech.json">Image links</image-links>
+
 
 </body>
 </html>

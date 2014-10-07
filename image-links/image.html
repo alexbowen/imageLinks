@@ -1,0 +1,37 @@
+<link rel="import" href="../bower_components/polymer/polymer.html">
+<link rel="import" href="./links.html">
+
+<polymer-element name="image-links" attributes="axis dataUrl" extends="list-links">
+
+    <template>
+
+        <link rel="stylesheet" href="./image.css"/>
+
+        <shadow></shadow>
+
+        <ul class="{{axis}}">
+            <template repeat="{{link in links | sort}}">
+                <li>
+                    <a class="{{link.name}}" alt="{{link.name}}" href="{{link.url}}"></a>
+                    <div>
+                        <h4 class="{{ {hidden : axis === 'horizontal'} | tokenList }}">{{link.title}}</h4>
+                        <p class="{{ {hidden : axis === 'horizontal'} | tokenList }}">{{link.description}}<a href="{{link.url}}">read more</a></p>
+                    </div>
+                </li>
+            </template>
+        </ul>
+
+    </template>
+
+    <script>
+
+        Polymer('image-links', {
+            ready : function () {
+                console.log('image-links (child) ready');
+                this.super();
+            }
+        });
+
+    </script>
+
+</polymer-element>
